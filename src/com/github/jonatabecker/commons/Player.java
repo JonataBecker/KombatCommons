@@ -10,6 +10,12 @@ public class Player {
     
     private int y;
 
+    public Player() {
+        this.y = 100;
+    }
+
+    
+    
     public int getX() {
         return x;
     }
