@@ -6,20 +6,24 @@ package com.github.jonatabecker.commons;
  */
 public class Bullet {
 
-    private transient final int pos;
+    private transient final Player player;
     private int x;
     private int y;
 
-    public Bullet(int pos, int x, int y) {
-        this.pos = pos;
+    public Bullet(Player player, int x, int y) {
+        this.player = player;
         this.x = x;
         this.y = y;
     }
-    
+
     public int getPos() {
-        return pos;
+        return player.getPos();
     }
-    
+
+    public Player getPlayer() {
+        return player;
+    }
+
     public int getX() {
         return x;
     }
@@ -35,5 +39,5 @@ public class Bullet {
     public void setY(int y) {
         this.y = y;
     }
-    
+
 }
