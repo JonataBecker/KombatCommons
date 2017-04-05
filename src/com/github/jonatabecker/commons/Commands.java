@@ -15,5 +15,9 @@ public interface Commands {
     public static final String PUNCH = "C";
     /** Bullet */
     public static final String BULLET = "B";
+    /** Down */
+    public static final String DOWN = "D";
+    /** Up */
+    public static final String UP = "U";
     
 }

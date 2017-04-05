@@ -12,6 +12,8 @@ public class Player {
     public transient static final int WAITING = 1;
     public transient static final int WALKING = 2;
     public transient static final int PUNCHING = 3;
+    public transient static final int DOWN = 4;
+    public transient static final int UP = 5;
 
     public transient static final int POS_LEFT = 1;
     public transient static final int POS_RIGHT = 2;
@@ -30,7 +32,7 @@ public class Player {
     public Player() {
         this.key = counter++;
         this.x = 10;
-        this.y = 150;
+        this.y = 200;
         this.live = MAX_LIVE;
         this.pos = POS_LEFT;
         this.state = WAITING;
@@ -70,6 +72,14 @@ public class Player {
 
     public boolean isPunching() {
         return state == PUNCHING;
+    }
+    
+    public boolean isDown() {
+        return state == DOWN;
+    }
+    
+    public boolean isUp() {
+        return state == UP;
     }
 
     public void setState(int state) {
