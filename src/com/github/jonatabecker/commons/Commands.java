@@ -19,5 +19,7 @@ public interface Commands {
     public static final String DOWN = "D";
     /** Up */
     public static final String UP = "U";
+    /** Up */
+    public static final String CONNECT = "CONNECT";
     
 }

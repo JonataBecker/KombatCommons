@@ -22,7 +22,7 @@ public class Player {
 
     public transient static int counter = 1;
 
-    private final int key;
+    private int key;
     private int x;
     private int y;
     private int pos;
@@ -38,6 +38,10 @@ public class Player {
         this.state = WAITING;
     }
 
+    public void setKey(int key) {
+        this.key = key;
+    } 
+    
     public int getKey() {
         return key;
     }
@@ -98,6 +102,14 @@ public class Player {
         return pos == POS_RIGHT;
     }
 
+    public float getLive() {
+        return live;
+    }
+
+    public void setLive(float live) {
+        this.live = live;
+    }
+    
     public float getLivePercent() {
         return (live * 100) / MAX_LIVE;
     }
